@@ -73,7 +73,8 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   // this is empty with npm3 but node resolution searches higher anyway:
   ownNodeModules: resolveOwn('../node_modules'),
-  nodePaths: nodePaths
+  nodePaths: nodePaths,
+  abstractCore: resolveApp('node_modules/@elasticprojects/abstract-core/src')
 };
 
 // config before publish: we're in ./packages/react-scripts/config/
